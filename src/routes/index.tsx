@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { createFileRoute } from "@tanstack/react-router";
 
 import "../portfolio.css";
@@ -49,9 +50,60 @@ const figures = [
   },
 ];
 
+const PDF_EVENT = "portfolio:open-pdf";
+
+function DocLink({ href, children }: { href: string; children: React.ReactNode }) {
+  return (
+    <a
+      className="doc-link"
+      href={href}
+      target="_blank"
+      rel="noopener"
+      onClick={(e) => {
+        e.preventDefault();
+        window.dispatchEvent(new CustomEvent(PDF_EVENT, { detail: href }));
+      }}
+    >
+      {children}
+    </a>
+  );
+}
+
+function PdfViewer() {
+  const [src, setSrc] = useState<string | null>(null);
+
+  useEffect(() => {
+    const open = (e: Event) => setSrc((e as CustomEvent<string>).detail);
+    const esc = (e: KeyboardEvent) => e.key === "Escape" && setSrc(null);
+    window.addEventListener(PDF_EVENT, open);
+    window.addEventListener("keydown", esc);
+    return () => {
+      window.removeEventListener(PDF_EVENT, open);
+      window.removeEventListener("keydown", esc);
+    };
+  }, []);
+
+  if (!src) return null;
+
+  return (
+    <div className="pdf-overlay" onClick={() => setSrc(null)}>
+      <div className="pdf-shell" onClick={(e) => e.stopPropagation()}>
+        <div className="pdf-bar">
+          <a href={src} target="_blank" rel="noopener">Open in new tab ↗</a>
+          <button type="button" onClick={() => setSrc(null)} aria-label="Close document">
+            Close ✕
+          </button>
+        </div>
+        <iframe src={src} title="Document viewer" />
+      </div>
+    </div>
+  );
+}
+
 function Index() {
   return (
     <div className="pf">
+      <PdfViewer />
       <header className="site-nav">
         <div className="nav-inner">
           <div className="brand">
