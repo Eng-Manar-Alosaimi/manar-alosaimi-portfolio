@@ -63,7 +63,7 @@ function Index() {
             <li><a href="#cases">Case Studies</a></li>
             <li><a href="#capstone">Capstone</a></li>
           </ul>
-          <a className="nav-cta" href="#contact">Contact</a>
+          <a className="nav-cta" href="#contact">Contact</DocLink>
         </div>
       </header>
 
@@ -222,9 +222,9 @@ function Index() {
                   Root-cause diagnosis · impact/evidence prioritization · Porter value-chain mapping
                   · phased roadmap design
                 </p>
-                <a className="doc-link" href={fitboxPdf.url} target="_blank" rel="noopener">
+                <DocLink href={fitboxPdf.url}>
                   Read the full case (PDF) ↗
-                </a>
+                </DocLink>
               </div>
             </div>
 
@@ -242,9 +242,9 @@ function Index() {
                   Organisation-level diagnosis · structured hypothesis testing · transformation
                   planning
                 </p>
-                <a className="doc-link" href={hospitalPdf.url} target="_blank" rel="noopener">
+                <DocLink href={hospitalPdf.url}>
                   Read the full case (PDF) ↗
-                </a>
+                </DocLink>
               </div>
             </div>
 
@@ -264,9 +264,9 @@ function Index() {
                 <p className="skills-line">
                   Executive synthesis · PPP / financing structuring · end-to-end deal narrative
                 </p>
-                <a className="doc-link" href={icDeckPdf.url} target="_blank" rel="noopener">
+                <DocLink href={icDeckPdf.url}>
                   View the decision deck (PDF) ↗
-                </a>
+                </DocLink>
               </div>
             </div>
 
@@ -281,9 +281,9 @@ function Index() {
                   decision-making.
                 </p>
                 <p className="skills-line">Financial modelling · assumption stress-testing</p>
-                <a className="doc-link" href={pepsiPdf.url} target="_blank" rel="noopener">
+                <DocLink href={pepsiPdf.url}>
                   View the model summary (PDF) ↗
-                </a>
+                </DocLink>
               </div>
             </div>
           </div>
@@ -363,16 +363,16 @@ function Index() {
               rel="noopener"
             >
               Watch Demo ↗
-            </a>
+            </DocLink>
           </div>
 
           <div className="doc-row">
-            <a className="doc-link" href={capstoneDeckPdf.url} target="_blank" rel="noopener">
+            <DocLink href={capstoneDeckPdf.url}>
               Final presentation (PDF) ↗
             </a>
-            <a className="doc-link" href={capstonePosterPdf.url} target="_blank" rel="noopener">
+            <DocLink href={capstonePosterPdf.url}>
               Research poster (PDF) ↗
-            </a>
+            </DocLink>
           </div>
         </div>
       </section>
