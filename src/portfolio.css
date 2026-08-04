@@ -228,3 +228,24 @@
   .pf .hero{padding:90px 0 60px;}
   .pf .wrap{padding:0 20px;}
 }
+
+.doc-link {
+  display: inline-block;
+  margin-top: 14px;
+  font-family: var(--mono, "JetBrains Mono", monospace);
+  font-size: 0.74rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--teal);
+  border-bottom: 1px solid color-mix(in srgb, var(--teal) 40%, transparent);
+  padding-bottom: 2px;
+  text-decoration: none;
+}
+.doc-link:hover { color: var(--gold); border-bottom-color: var(--gold); }
+
+.doc-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+  margin-top: 22px;
+}

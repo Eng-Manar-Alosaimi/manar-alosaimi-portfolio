@@ -3,8 +3,12 @@ import { createFileRoute } from "@tanstack/react-router";
 import "../portfolio.css";
 import flowchart from "@/assets/sys-flowchart.png.asset.json";
 import modelArch from "@/assets/model-arch.jpeg.asset.json";
-import trainingResults from "@/assets/training-results.png.asset.json";
-import confusionMatrix from "@/assets/confusion-matrix.png.asset.json";
+import fitboxPdf from "@/assets/FitBox_Strategic_Diagnostic.pdf.asset.json";
+import hospitalPdf from "@/assets/Hospital_Group_B2O_Turnaround.pdf.asset.json";
+import icDeckPdf from "@/assets/Investment_Committee_Decision_Deck.pdf.asset.json";
+import pepsiPdf from "@/assets/Pepsi_Cola_Riyadh_Financial_Model.pdf.asset.json";
+import capstoneDeckPdf from "@/assets/Hajj_Earbud_Presentation.pdf.asset.json";
+import capstonePosterPdf from "@/assets/Hajj_Earbud_Poster.pdf.asset.json";
 
 const TITLE = "Manar Alosaimi — Consulting & Engineering Portfolio";
 const DESCRIPTION =
@@ -42,16 +46,6 @@ const figures = [
     src: modelArch.url,
     alt: "CNN model architecture summary",
     caption: "CNN architecture — sequential model, Conv2D + BatchNorm blocks",
-  },
-  {
-    src: trainingResults.url,
-    alt: "Loss, accuracy, and top-3 accuracy training curves",
-    caption: "Training results — loss, accuracy, and top-3 accuracy curves (100 epochs)",
-  },
-  {
-    src: confusionMatrix.url,
-    alt: "Confusion matrix for the 29-keyword classifier",
-    caption: "Confusion matrix — 29-keyword Arabic KWS classifier",
   },
 ];
 
@@ -228,6 +222,9 @@ function Index() {
                   Root-cause diagnosis · impact/evidence prioritization · Porter value-chain mapping
                   · phased roadmap design
                 </p>
+                <a className="doc-link" href={fitboxPdf.url} target="_blank" rel="noopener">
+                  Read the full case (PDF) ↗
+                </a>
               </div>
             </div>
 
@@ -245,6 +242,9 @@ function Index() {
                   Organisation-level diagnosis · structured hypothesis testing · transformation
                   planning
                 </p>
+                <a className="doc-link" href={hospitalPdf.url} target="_blank" rel="noopener">
+                  Read the full case (PDF) ↗
+                </a>
               </div>
             </div>
 
@@ -264,6 +264,9 @@ function Index() {
                 <p className="skills-line">
                   Executive synthesis · PPP / financing structuring · end-to-end deal narrative
                 </p>
+                <a className="doc-link" href={icDeckPdf.url} target="_blank" rel="noopener">
+                  View the decision deck (PDF) ↗
+                </a>
               </div>
             </div>
 
@@ -278,6 +281,9 @@ function Index() {
                   decision-making.
                 </p>
                 <p className="skills-line">Financial modelling · assumption stress-testing</p>
+                <a className="doc-link" href={pepsiPdf.url} target="_blank" rel="noopener">
+                  View the model summary (PDF) ↗
+                </a>
               </div>
             </div>
           </div>
@@ -357,6 +363,15 @@ function Index() {
               rel="noopener"
             >
               Watch Demo ↗
+            </a>
+          </div>
+
+          <div className="doc-row">
+            <a className="doc-link" href={capstoneDeckPdf.url} target="_blank" rel="noopener">
+              Final presentation (PDF) ↗
+            </a>
+            <a className="doc-link" href={capstonePosterPdf.url} target="_blank" rel="noopener">
+              Research poster (PDF) ↗
             </a>
           </div>
         </div>
