@@ -63,7 +63,7 @@ function Index() {
             <li><a href="#cases">Case Studies</a></li>
             <li><a href="#capstone">Capstone</a></li>
           </ul>
-          <a className="nav-cta" href="#contact">Contact</DocLink>
+          <a className="nav-cta" href="#contact">Contact</a>
         </div>
       </header>
 
@@ -363,13 +363,13 @@ function Index() {
               rel="noopener"
             >
               Watch Demo ↗
-            </DocLink>
+            </a>
           </div>
 
           <div className="doc-row">
             <DocLink href={capstoneDeckPdf.url}>
               Final presentation (PDF) ↗
-            </a>
+            </DocLink>
             <DocLink href={capstonePosterPdf.url}>
               Research poster (PDF) ↗
             </DocLink>
