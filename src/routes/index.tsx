@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { createFileRoute } from "@tanstack/react-router";
 
 import "../portfolio.css";
@@ -49,9 +50,60 @@ const figures = [
   },
 ];
 
+const PDF_EVENT = "portfolio:open-pdf";
+
+function DocLink({ href, children }: { href: string; children: React.ReactNode }) {
+  return (
+    <a
+      className="doc-link"
+      href={href}
+      target="_blank"
+      rel="noopener"
+      onClick={(e) => {
+        e.preventDefault();
+        window.dispatchEvent(new CustomEvent(PDF_EVENT, { detail: href }));
+      }}
+    >
+      {children}
+    </a>
+  );
+}
+
+function PdfViewer() {
+  const [src, setSrc] = useState<string | null>(null);
+
+  useEffect(() => {
+    const open = (e: Event) => setSrc((e as CustomEvent<string>).detail);
+    const esc = (e: KeyboardEvent) => e.key === "Escape" && setSrc(null);
+    window.addEventListener(PDF_EVENT, open);
+    window.addEventListener("keydown", esc);
+    return () => {
+      window.removeEventListener(PDF_EVENT, open);
+      window.removeEventListener("keydown", esc);
+    };
+  }, []);
+
+  if (!src) return null;
+
+  return (
+    <div className="pdf-overlay" onClick={() => setSrc(null)}>
+      <div className="pdf-shell" onClick={(e) => e.stopPropagation()}>
+        <div className="pdf-bar">
+          <a href={src} target="_blank" rel="noopener">Open in new tab ↗</a>
+          <button type="button" onClick={() => setSrc(null)} aria-label="Close document">
+            Close ✕
+          </button>
+        </div>
+        <iframe src={src} title="Document viewer" />
+      </div>
+    </div>
+  );
+}
+
 function Index() {
   return (
     <div className="pf">
+      <PdfViewer />
       <header className="site-nav">
         <div className="nav-inner">
           <div className="brand">
@@ -222,9 +274,9 @@ function Index() {
                   Root-cause diagnosis · impact/evidence prioritization · Porter value-chain mapping
                   · phased roadmap design
                 </p>
-                <a className="doc-link" href={fitboxPdf.url} target="_blank" rel="noopener">
+                <DocLink href={fitboxPdf.url}>
                   Read the full case (PDF) ↗
-                </a>
+                </DocLink>
               </div>
             </div>
 
@@ -242,9 +294,9 @@ function Index() {
                   Organisation-level diagnosis · structured hypothesis testing · transformation
                   planning
                 </p>
-                <a className="doc-link" href={hospitalPdf.url} target="_blank" rel="noopener">
+                <DocLink href={hospitalPdf.url}>
                   Read the full case (PDF) ↗
-                </a>
+                </DocLink>
               </div>
             </div>
 
@@ -264,9 +316,9 @@ function Index() {
                 <p className="skills-line">
                   Executive synthesis · PPP / financing structuring · end-to-end deal narrative
                 </p>
-                <a className="doc-link" href={icDeckPdf.url} target="_blank" rel="noopener">
+                <DocLink href={icDeckPdf.url}>
                   View the decision deck (PDF) ↗
-                </a>
+                </DocLink>
               </div>
             </div>
 
@@ -281,9 +333,9 @@ function Index() {
                   decision-making.
                 </p>
                 <p className="skills-line">Financial modelling · assumption stress-testing</p>
-                <a className="doc-link" href={pepsiPdf.url} target="_blank" rel="noopener">
+                <DocLink href={pepsiPdf.url}>
                   View the model summary (PDF) ↗
-                </a>
+                </DocLink>
               </div>
             </div>
           </div>
@@ -367,12 +419,12 @@ function Index() {
           </div>
 
           <div className="doc-row">
-            <a className="doc-link" href={capstoneDeckPdf.url} target="_blank" rel="noopener">
+            <DocLink href={capstoneDeckPdf.url}>
               Final presentation (PDF) ↗
-            </a>
-            <a className="doc-link" href={capstonePosterPdf.url} target="_blank" rel="noopener">
+            </DocLink>
+            <DocLink href={capstonePosterPdf.url}>
               Research poster (PDF) ↗
-            </a>
+            </DocLink>
           </div>
         </div>
       </section>
