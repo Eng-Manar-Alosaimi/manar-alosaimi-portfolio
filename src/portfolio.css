@@ -249,3 +249,47 @@
   gap: 28px;
   margin-top: 22px;
 }
+
+.pdf-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  background: rgba(9, 20, 32, 0.82);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+.pdf-shell {
+  width: min(1100px, 100%);
+  height: min(90vh, 100%);
+  background: #fff;
+  border-radius: 6px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.45);
+}
+.pdf-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 10px 16px;
+  background: var(--navy, #0B1F33);
+}
+.pdf-bar a,
+.pdf-bar button {
+  font-family: var(--mono, "JetBrains Mono", monospace);
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #fff;
+  background: none;
+  border: 0;
+  cursor: pointer;
+  text-decoration: none;
+}
+.pdf-bar a:hover,
+.pdf-bar button:hover { color: var(--gold); }
+.pdf-shell iframe { flex: 1; width: 100%; border: 0; }
