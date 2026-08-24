@@ -50,6 +50,29 @@ const figures = [
   },
 ];
 
+const MARQUEE_ITEMS = [
+  "Business Analysis",
+  "Data Analysis",
+  "Structured Problem-Solving",
+  "Financial Modelling",
+  "Requirements Engineering",
+  "Systems Analysis",
+  "Process Analysis",
+  "Edge AI / Machine Learning",
+  "Enterprise Technology",
+  "Python",
+  "SQL",
+  "Excel Modelling",
+  "PowerPoint",
+  "Stakeholder Communication",
+  "Digital Transformation",
+  "Feasibility Studies",
+  "Market Research",
+  "Root-Cause Diagnosis",
+  "Technology-Enabled Performance",
+  "Portfolio Management",
+];
+
 const PDF_EVENT = "portfolio:open-pdf";
 
 function DocLink({ href, children }: { href: string; children: React.ReactNode }) {
@@ -114,7 +137,7 @@ function Index() {
             <li><a href="#experience">Experience</a></li>
             <li><a href="#cases">Case Studies</a></li>
             <li><a href="#capstone">Capstone</a></li>
-            <li><a href="#certifications">Certifications</a></li>
+            
           </ul>
           <a className="nav-cta" href="#contact">Contact</a>
         </div>
@@ -261,6 +284,14 @@ function Index() {
           </div>
         </div>
       </section>
+
+      <div className="marquee-wrap" role="region" aria-label="Skills and focus areas">
+        <div className="marquee-track">
+          {[...MARQUEE_ITEMS, ...MARQUEE_ITEMS].map((item, i) => (
+            <span key={i} className="marquee-item">{item}</span>
+          ))}
+        </div>
+      </div>
 
       <section id="cases">
         <div className="wrap">
@@ -464,18 +495,6 @@ function Index() {
         </div>
       </section>
 
-      <section id="certifications">
-        <div className="wrap">
-          <div className="section-head"><span className="section-num">05</span><h2>Certifications &amp; Professional Development</h2></div>
-          <ul className="cert-list">
-            <li>Digital Transformation and AI for Business</li>
-            <li>IBM AI Engineering Professional Certificate</li>
-            <li>McKinsey Forward Program</li>
-            <li>“C-Suite Ready in 90 Days” — AI-Augmented Business &amp; Technology Program</li>
-            <li>Excel Fundamentals</li>
-          </ul>
-        </div>
-      </section>
 
       <footer id="contact">
         <div className="wrap">
@@ -503,7 +522,6 @@ function Index() {
           </div>
           <div className="fine-print">
             <span>© 2026 Manar Mastour Alosaimi</span>
-            <span>Built as a portfolio companion to CV &amp; case study decks</span>
           </div>
         </div>
       </footer>
