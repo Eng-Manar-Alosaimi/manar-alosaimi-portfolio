@@ -2,12 +2,12 @@ import { useEffect, useState } from "react";
 import { createFileRoute } from "@tanstack/react-router";
 
 import "../portfolio.css";
-import flowchart from "@/assets/sys-flowchart.png.asset.json";
-import modelArch from "@/assets/model-arch.jpeg.asset.json";
-import fitboxPdf from "@/assets/FitBox_Strategic_Diagnostic.pdf.asset.json";
-import hospitalPdf from "@/assets/Hospital_Group_B2O_Turnaround.pdf.asset.json";
-import icDeckPdf from "@/assets/Investment_Committee_Decision_Deck.pdf.asset.json";
-import pepsiPdf from "@/assets/Pepsi_Cola_Riyadh_Financial_Model.pdf.asset.json";
+const flowchart = "/sys-flowchart (1).png";
+const modelArch = "/model-arch (1).jpeg";
+const fitboxPdf = "/FitBox_Strategic_Diagnostic.pdf";
+const hospitalPdf = "/Hospital_Group_B2O_Turnaround.pdf";
+const icDeckPdf = "/Investment_Committee_Decision_Deck.pdf";
+const pepsiPdf = "/Pepsi_Cola_Riyadh_Financial_Model (1).pdf";
 import capstoneDeckPdf from "@/assets/Hajj_Earbud_Presentation.pdf.asset.json";
 import capstonePosterPdf from "@/assets/Hajj_Earbud_Poster.pdf.asset.json";
 
