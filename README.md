@@ -17,6 +17,7 @@ Inside this portfolio, you'll find:
 ## 🛠️ Built With & Hosted On
 * **Development:** Built with ❤️ using **Lovable** (leveraging AI-driven modern web tech).
 * **Deployment:** Hosted on **Vercel** via GitHub automation.
+  
 -----> https://eng-manaralosaimi.vercel.app/
 ---
 
