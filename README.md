@@ -1,26 +1,26 @@
-# Image Attachments
+# 👩‍💻 Welcome to My Professional Portfolio!
 
-can i attach pngs in it
+Welcome to my digital space! This portfolio is a curated showcase of my professional identity, strategic thinking, and hands-on case studies. It reflects my journey, my problem-solving approach, and how I bridge the gap between business strategy and technology.
 
-This project was built with [Lovable](https://lovable.dev).
+---
 
-**Live app**: https://manar-alosaimi-portfolio.lovable.app
+## Featured Projects & Case Studies
+Inside this portfolio, you'll find:
+* **🎓 Capstone Graduation Project:** [Standalone Smart Hajj Earbud Assistant] — My academic pride and joy!
+* **💼 Business & Technical Case Studies:** Detailed breakdowns of real-world problems I've analyzed and solved (including FitBox, Hospital Group Turnaround, and Pepsi Co. Riyadh models).
+* ** A glance at my structured thinking and simple system architectures.
 
-## Build with Lovable
+---
 
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/29317b4e-8368-4c9d-9ccc-4f03bb578a2c).
+## 🛠️ Built With & Hosted On
+* **Development:** Built with ❤️ using **Lovable** (leveraging AI-driven modern web tech).
+* **Deployment:** Hosted on **Vercel** via GitHub automation.
 
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
+---
 
-## Development
+## ✨ Let's Connect!
+Have fun exploring my brain, my workflows, and the strategic messy-to-clean processes behind each project! Hope you enjoy the journey. 🚀
 
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
+* 💬 Connect with me on [LinkedIn]( https://www.linkedin.com/in/manar-alosaimixx)
+* 📬 Drop me an email: [engmanaralosaimi@gmail.com]
 
-```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
-npm run dev
-```
