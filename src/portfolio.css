@@ -300,3 +300,66 @@
 .pdf-bar a:hover,
 .pdf-bar button:hover { color: var(--gold); }
 .pdf-shell iframe { flex: 1; width: 100%; border: 0; }
+
+.pf .marquee-wrap {
+  overflow: hidden;
+  background: var(--panel);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  padding: 20px 0;
+  position: relative;
+}
+.pf .marquee-wrap::before,
+.pf .marquee-wrap::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 80px;
+  z-index: 2;
+  pointer-events: none;
+}
+.pf .marquee-wrap::before {
+  left: 0;
+  background: linear-gradient(to right, var(--panel), transparent);
+}
+.pf .marquee-wrap::after {
+  right: 0;
+  background: linear-gradient(to left, var(--panel), transparent);
+}
+.pf .marquee-track {
+  display: flex;
+  width: max-content;
+  gap: 40px;
+  animation: marquee-scroll 35s linear infinite;
+}
+.pf .marquee-wrap:hover .marquee-track {
+  animation-play-state: paused;
+}
+.pf .marquee-item {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px;
+  color: var(--ink-soft);
+  white-space: nowrap;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: color .15s;
+  cursor: default;
+}
+.pf .marquee-item:hover {
+  color: var(--teal);
+}
+.pf .marquee-item::before {
+  content: "◆";
+  color: var(--teal);
+  font-size: 8px;
+}
+@keyframes marquee-scroll {
+  from { transform: translateX(-50%); }
+  to { transform: translateX(0); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .pf .marquee-track { animation: none; }
+}
