@@ -90,7 +90,14 @@
   margin-bottom:22px;
 }
 .pf .hero h1 em{font-style:italic; color:var(--teal);}
-.pf .hero .lede{font-size:18px; color:var(--ink-soft); max-width:600px; margin-bottom:36px;}
+.pf .hero .hero-subtitle{
+  font-size:18px;
+  color:var(--ink);
+  max-width:680px;
+  margin-bottom:18px;
+  font-weight:500;
+}
+.pf .hero .lede{font-size:17px; color:var(--ink-soft); max-width:640px; margin-bottom:36px;}
 .pf .hero-meta{
   display:grid; grid-template-columns:repeat(3, minmax(0,1fr)); gap:28px;
   font-family:'JetBrains Mono', monospace; font-size:12.5px; color:var(--ink);
