@@ -8,6 +8,7 @@ Welcome to my digital space! This portfolio is a curated showcase of my professi
 Inside this portfolio, you'll find:
 * **🎓 Capstone Graduation Project:** [Standalone Smart Hajj Earbud Assistant] — My academic pride and joy!
 * **💼 Business & Technical Case Studies:** Detailed breakdowns of real-world problems I've analyzed and solved (including FitBox, Hospital Group Turnaround, and Pepsi Co. Riyadh models).
+
 ** A glance at my structured thinking and simple system architectures.
 
 ---
