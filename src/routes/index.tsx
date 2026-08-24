@@ -11,9 +11,9 @@ import pepsiPdf from "@/assets/Pepsi_Cola_Riyadh_Financial_Model.pdf.asset.json"
 import capstoneDeckPdf from "@/assets/Hajj_Earbud_Presentation.pdf.asset.json";
 import capstonePosterPdf from "@/assets/Hajj_Earbud_Poster.pdf.asset.json";
 
-const TITLE = "Manar Alosaimi — Consulting & Engineering Portfolio";
+const TITLE = "Manar Alosaimi — Technology, Data & Structured Problem-Solving";
 const DESCRIPTION =
-  "Computer Engineering graduate building toward management consulting. Case studies, engagement experience, and an Edge-AI technical capstone.";
+  "Computer Engineering graduate combining technology, data analysis, business analysis, and structured problem-solving to support technology-enabled transformation and performance improvement.";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -114,6 +114,7 @@ function Index() {
             <li><a href="#experience">Experience</a></li>
             <li><a href="#cases">Case Studies</a></li>
             <li><a href="#capstone">Capstone</a></li>
+            <li><a href="#certifications">Certifications</a></li>
           </ul>
           <a className="nav-cta" href="#contact">Contact</a>
         </div>
@@ -123,17 +124,24 @@ function Index() {
         <div className="wrap">
           <div className="eyebrow">Riyadh, Saudi Arabia</div>
           <h1>
-            Structured thinking for <em>complex</em> business &amp; technical problems.
+            Technology, Data &amp; Structured Problem-Solving for Complex Business Challenges
           </h1>
+          <p className="hero-subtitle">
+            Computer Engineering graduate (First Class Honors) combining technology, data analysis,
+            business analysis, and structured problem-solving to support technology-enabled
+            transformation and performance improvement.
+          </p>
           <p className="lede">
-            Computer Engineering graduate (First Class Honours) building toward a career in
-            technology and management consulting — combining root-cause diagnostics, financial
-            modelling, and hands-on systems delivery.
+            I combine an engineering foundation with hands-on experience in business analysis,
+            data-driven problem solving, financial modelling, and enterprise technology. Through
+            consulting Accelerator, technical projects, and structured case studies, I have developed
+            the ability to move from problem definition and analysis to practical recommendations,
+            system delivery, and stakeholder-ready communication.
           </p>
           <div className="hero-meta">
             <div><span>Education</span>B.Sc. Computer Engineering, Taif University — GPA 3.82/4.0</div>
             <div><span>Most Recent</span>Boost Accelerator, Arpus Consulting (Completed)</div>
-            <div><span>Focus</span>Strategy · Feasibility · Business Diagnosis</div>
+            <div><span>Focus</span>Enterprise Technology · Business Analysis · Data &amp; Analytics</div>
           </div>
         </div>
       </section>
@@ -144,44 +152,51 @@ function Index() {
           <div className="profile-grid">
             <div>
               <p>
-                I build toward management consulting from an engineering foundation: strong
-                analytical and structured problem-solving skills paired with hands-on experience in
-                enterprise systems and business analysis. I completed the Boost Accelerator
-                Programme, an intensive AI-augmented business and consulting programme, where I put
-                that capability to work on live feasibility and diagnostic engagements — from market
-                sizing to financial modelling to client-ready deliverables.
+                Computer Engineering graduate with First Class Honors and a strong foundation in
+                technology, data analysis, business analysis, and structured problem-solving.
+                Experienced in research, market and demand analysis, Excel-based financial modelling,
+                requirements engineering, and developing client-ready presentations and deliverables.
               </p>
               <p>
-                What I look for in a problem: the gap between the symptom people describe and the
-                root cause underneath it — then a plan that's honest about trade-offs and sequenced
-                enough to actually ship.
+                Brings hands-on exposure to enterprise IT environments and end-to-end technology
+                delivery through an Edge-AI graduation project. Interested in technology-enabled
+                transformation, enterprise systems, data-driven decision-making, and performance
+                improvement.
               </p>
               <div className="skill-block">
-                <h4>Business &amp; Consulting</h4>
+                <h4>Business Analysis &amp; Technology</h4>
                 <div className="tag-row">
+                  <span className="tag">Business Analysis</span>
+                  <span className="tag">Data Analysis</span>
                   <span className="tag">Structured Problem-Solving</span>
                   <span className="tag">Requirements Engineering</span>
-                  <span className="tag">Systems &amp; Business Analysis</span>
-                  <span className="tag">UML Modelling</span>
+                  <span className="tag">Systems Analysis</span>
+                  <span className="tag">Process Analysis</span>
+                  <span className="tag">Research &amp; Data Collection</span>
                   <span className="tag">Financial Modelling</span>
+                  <span className="tag">Stakeholder Communication</span>
+                  <span className="tag">Presentation Development</span>
                 </div>
               </div>
               <div className="skill-block">
                 <h4>Technical</h4>
                 <div className="tag-row">
-                  <span className="tag">Python</span>
-                  <span className="tag">SQL</span>
+                  <span className="tag">Python Fundamentals</span>
+                  <span className="tag">SQL Fundamentals</span>
                   <span className="tag">Data Analysis</span>
+                  <span className="tag">Edge AI / Machine Learning</span>
+                  <span className="tag">Systems Integration</span>
+                  <span className="tag">Enterprise IT Concepts</span>
                   <span className="tag">Git / GitHub</span>
                 </div>
               </div>
               <div className="skill-block">
                 <h4>Tools</h4>
                 <div className="tag-row">
-                  <span className="tag">Excel</span>
-                  <span className="tag">PowerPoint</span>
-                  <span className="tag">Word</span>
-                  <span className="tag">Lucidchart</span>
+                  <span className="tag">Microsoft Excel</span>
+                  <span className="tag">Microsoft PowerPoint</span>
+                  <span className="tag">Microsoft Word</span>
+                  <span className="tag">Lucidcharts</span>
                 </div>
               </div>
               <div className="skill-block">
@@ -193,11 +208,12 @@ function Index() {
               </div>
             </div>
             <div>
-              <h4 className="col-head">Certifications &amp; Programmes</h4>
+              <h4 className="col-head">Certifications &amp; Professional Development</h4>
               <ul className="cert-list">
-                <li>"C-Suite Ready in 90 Days" — AI-Augmented Business &amp; Consulting Programme</li>
+                <li>Digital Transformation and AI for Business</li>
                 <li>IBM AI Engineering Professional Certificate</li>
-                <li>McKinsey Forward Programme</li>
+                <li>McKinsey Forward Program</li>
+                <li>“C-Suite Ready in 90 Days” — AI-Augmented Business &amp; Technology Program</li>
                 <li>Excel Fundamentals</li>
               </ul>
             </div>
@@ -218,10 +234,10 @@ function Index() {
                 private-sector clients across strategy, feasibility, and operating-model engagements
               </div>
               <ul>
-                <li>Conducted market research, benchmarking, and data analysis to support strategy and feasibility engagements across public- and private-sector clients.</li>
-                <li>Contributed to a healthcare feasibility study, supporting market sizing and demand analysis used to shape capacity and service-mix assumptions.</li>
-                <li>Built financial models in Excel to test commercial and operational assumptions and support feasibility analysis.</li>
-                <li>Prepared client-ready slides and sections of reports and presentations, keeping content aligned with the overall engagement storyline.</li>
+                <li>Conducted market research, benchmarking, and data analysis to support strategy and feasibility engagements across public- and private-sector.</li>
+                <li>Analyzed market demand and sizing for a healthcare feasibility study, supporting capacity and service-mix assumptions.</li>
+                <li>Built Excel-based financial models to test commercial and operational assumptions and support data-driven feasibility analysis.</li>
+                <li>Structured findings into clear recommendations and client-ready presentations, translating analytical outputs into decision-oriented deliverables.</li>
               </ul>
               <p className="gained">
                 Gained: feasibility-study structuring, market sizing &amp; demand analysis,
@@ -235,10 +251,11 @@ function Index() {
             <div className="when">Jul — Aug 2025</div>
             <div>
               <h3>IT Trainee</h3>
-              <div className="org">King Fahad Air Base, International Systems Engineering</div>
+              <div className="org">King Fahad Air Base — International Systems Engineering</div>
               <ul>
-                <li>Completed a structured training rotation across multiple enterprise IT domains, gaining exposure to how large, mission-critical organisations run their technology operations.</li>
-                <li>Studied infrastructure architecture and enterprise infrastructure management principles, connecting technical design decisions to operational reliability and security.</li>
+                <li>Completed a structured rotation across enterprise IT domains within a large, mission-critical organizational environment.</li>
+                <li>Analyzed enterprise infrastructure management principles and the relationship between technical architecture, operational reliability, and organizational performance.</li>
+                <li>Developed practical understanding of how technology infrastructure supports business continuity, operational efficiency, and large-scale organizational requirements.</li>
               </ul>
             </div>
           </div>
@@ -247,11 +264,11 @@ function Index() {
 
       <section id="cases">
         <div className="wrap">
-          <div className="section-head"><span className="section-num">03</span><h2>Business Case Studies</h2></div>
+          <div className="section-head"><span className="section-num">03</span><h2>Business &amp; Technology Case Studies</h2></div>
           <p className="section-sub">
             Developed through a structured consulting-methodology programme: each case moves from
-            symptom identification through root-cause diagnosis to a phased, sequenced
-            recommendation.
+            problem definition and analysis to practical recommendations and decision-oriented
+            deliverables.
           </p>
 
           <div className="case-grid">
@@ -262,13 +279,14 @@ function Index() {
                 <h3>FitBox Strategic Diagnostic &amp; Transformation Roadmap</h3>
                 <span className="sector">Retail / Consumer Subscription — Riyadh</span>
                 <p>
-                  A subscription meal-delivery business facing a 22% monthly revenue decline and
-                  rising churn. Applied a symptoms → assessments → root causes → priorities
-                  framework across strategy, operating model, and financials; an impact/evidence
-                  prioritization matrix isolated outsourced delivery logistics and a commoditized
-                  value proposition as the two reinforcing root causes. Delivered a three-phase
-                  roadmap (Stabilize → Redesign → Scale) with named KPIs — on-time delivery to 85%,
-                  churn from 40% to 18%.
+                  Analyzed a 22% revenue decline using structured root-cause analysis across customer,
+                  operational, and value-chain dimensions.
+                </p>
+                <p>
+                  Identified logistics misalignment and value proposition issues as key drivers of
+                  customer churn. Designed a phased transformation roadmap connecting operational
+                  improvements, technology enablement, and performance KPIs. Presented findings and
+                  recommendations through a structured executive-style decision narrative.
                 </p>
                 <p className="skills-line">
                   Root-cause diagnosis · impact/evidence prioritization · Porter value-chain mapping
@@ -283,12 +301,16 @@ function Index() {
             <div className="case-card">
               <div className="idx">02</div>
               <div>
-                <h3>Hospital Group Turnaround (B2O)</h3>
+                <h3>Hospital Group Turnaround</h3>
                 <span className="sector">Healthcare / Government-adjacent — Riyadh</span>
                 <p>
-                  Diagnosed performance issues across an underperforming hospital group, moving past
-                  the surface explanation of "the market is competitive" to structural and
-                  operational root causes, and defined a transformation plan to restore performance.
+                  Analyzed organizational and operational performance issues to identify structural
+                  root causes beyond surface-level market explanations.
+                </p>
+                <p>
+                  Applied structured hypothesis testing to evaluate operational drivers and define
+                  improvement priorities. Developed a transformation plan focused on restoring
+                  operational and organizational performance.
                 </p>
                 <p className="skills-line">
                   Organisation-level diagnosis · structured hypothesis testing · transformation
@@ -308,10 +330,13 @@ function Index() {
                   Healthcare / Real Estate / Government — $200M PPP Investment, Riyadh
                 </span>
                 <p>
-                  Capstone of a multi-week private healthcare investment case, culminating in an
-                  IC-ready recommendation to proceed via a partner-structured, PPP-financed
-                  investment — built on prior work spanning screening, build-vs-partner entry,
-                  performance diagnosis, PPP bankability, and a 5-year financial forecast.
+                  Analyzed a healthcare investment opportunity across market, operational, financial,
+                  and partnership considerations.
+                </p>
+                <p>
+                  Built a structured decision framework combining business analysis, financial
+                  modelling, and scenario evaluation. Synthesized complex analysis into an
+                  executive-ready recommendation and decision deck.
                 </p>
                 <p className="skills-line">
                   Executive synthesis · PPP / financing structuring · end-to-end deal narrative
@@ -328,8 +353,11 @@ function Index() {
                 <h3>Pepsi Cola Riyadh — Financial Model</h3>
                 <span className="sector">FMCG / Retail — Riyadh</span>
                 <p>
-                  Built a financial model to test commercial and operational assumptions for a
-                  recognised consumer brand's Riyadh operations, supporting scenario analysis and
+                  Built a financial model to evaluate commercial and operational assumptions for
+                  Riyadh operations.
+                </p>
+                <p>
+                  Conducted scenario analysis and assumption stress-testing to support structured
                   decision-making.
                 </p>
                 <p className="skills-line">Financial modelling · assumption stress-testing</p>
@@ -350,10 +378,17 @@ function Index() {
             <div>
               <h3>Standalone Smart Hajj Earbud Assistant</h3>
               <p>
-                An Edge-AI wearable improving pilgrim safety through real-time keyword spotting,
-                continuous vital-sign monitoring, and automated translation — built end-to-end from
-                requirements to a tested hardware prototype. Graduation project, Department of
-                Computer Engineering, Taif University, supervised by Dr. Shaima Elnazer.
+                Edge-AI Wearable | Graduation Project
+              </p>
+              <p>
+                Translated user and safety requirements into an integrated Edge-AI system designed
+                for real-time pilgrim support. Architected and integrated five hardware modules,
+                on-device AI inference, sensors, and communication services into one system. Developed
+                a keyword-spotting pipeline using 12,000 Arabic audio samples and deployed the trained
+                model on-device. Managed end-to-end delivery from requirements and system design
+                through integration, testing, documentation, and presentation. Achieved 97–99%
+                keyword classification accuracy and validated the prototype through end-to-end
+                testing.
               </p>
             </div>
             <div className="capstone-stats">
@@ -429,20 +464,40 @@ function Index() {
         </div>
       </section>
 
+      <section id="certifications">
+        <div className="wrap">
+          <div className="section-head"><span className="section-num">05</span><h2>Certifications &amp; Professional Development</h2></div>
+          <ul className="cert-list">
+            <li>Digital Transformation and AI for Business</li>
+            <li>IBM AI Engineering Professional Certificate</li>
+            <li>McKinsey Forward Program</li>
+            <li>“C-Suite Ready in 90 Days” — AI-Augmented Business &amp; Technology Program</li>
+            <li>Excel Fundamentals</li>
+          </ul>
+        </div>
+      </section>
+
       <footer id="contact">
         <div className="wrap">
           <div className="contact-grid">
             <div>
-              <h2>Let's talk about how structured thinking solves your next problem.</h2>
+              <h2>What I Bring</h2>
               <p>
-                Open to management consulting internships and analyst opportunities across strategy,
-                feasibility, and technology-enabled transformation.
+                A combination of engineering thinking, data analysis, business understanding, and
+                practical technology delivery — with a focus on turning complex problems into
+                structured, actionable solutions.
+              </p>
+              <p>
+                Open to opportunities across Enterprise Technology, Technology Transformation,
+                Business Analysis, Data &amp; Analytics, and Technology-enabled Performance
+                Improvement.
               </p>
             </div>
             <ul className="contact-list">
               <li><span>Email</span><a href="mailto:engmanaralosaimi@gmail.com">engmanaralosaimi@gmail.com</a></li>
               <li><span>Phone</span><a href="tel:+966538988789">+966 538 988 789</a></li>
               <li><span>LinkedIn</span><a href="https://www.linkedin.com/in/manar-alosaimixx" target="_blank" rel="noopener">manar-alosaimixx</a></li>
+              <li><span>GitHub</span><a href="https://github.com/Eng-Manar-Alosaimi" target="_blank" rel="noopener">Eng-Manar-Alosaimi</a></li>
               <li><span>Location</span><span style={{ color: "var(--ink)" }}>Riyadh, Saudi Arabia</span></li>
             </ul>
           </div>
